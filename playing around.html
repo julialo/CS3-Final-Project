@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>PLaying Around</title>
+<h1 id="main"; style="text-align:center; text-transform:uppercase; font-family:calibri;">Centered?</h1>
+<p id="p1">Here is a paragraph in the head.</p>
+</head>
+
+<script>
+
+function deleteFirstWord(){
+	document.getElementById("p2").innerHTML = "Here is a paragraph in the body.";
+	document.getElementById("b1").innerHTML = "Bring it back";
+	document.getElemebtById("b1").onclick.function = "bringItBack()";
+}
+
+function bringItBack(){
+	document.getElementById("p2").innerHTML = "Here is a paragraph in the body.<br>And a new line, hopefully.";
+	document.getElementById("b1").onclick = "deleteFirstWord()";
+}
+</script>
+
+<body>
+<div id = "list">
+Here is a list<br>
+  - let's see how it works out<br>
+  - a<br>
+  - b<br>
+  - c<br>
+  - and its over
+</div>
+<p id="p2">Here is a paragraph in the body.<br>And a new line, hopefully.</p>
+<button id="b1" style="color:black; text-color:white; font-size:12px; padding:5px;" onclick="deleteFirstWord()">Click here to delete the last line</button>
+</body>
+
+<style type="text/css">
+#list {
+	text-size:10px; 
+	background-color:#eeeeee;
+	border-color:#ffffff;
+	border-radius:5px; 
+}
+</style>
+
+</html>
